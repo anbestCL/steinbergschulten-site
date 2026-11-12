@@ -1,0 +1,22 @@
+- when: "2024–"
+  degree: "PhD in Statistics"
+  where: "Social Data Science and AI Lab, LMU Munich"
+  notes:
+    - 'Main project: information extraction of sustainability metrics from corporate sustainability reports using large language models (<a href="https://www.stat.lmu.de/soda/en/research/research-projects/gist-greenhouse-gas-insights-and-sustainability-tracking/">project website</a>)'
+- when: "2020–"
+  degree: "M.Sc. in Mathematics"
+  where: "RWTH Aachen"
+  notes:
+    - 'Focus: Statistics, Minor: Computer Science. Coursework completed 2023, thesis outstanding. Fall 2021: semester abroad at NaUKMA, Kyiv'
+- when: "2017–2020"
+  degree: "M.Sc. in Computational Linguistics"
+  where: "LMU Munich"
+  notes:
+    - 'Grade: 1.2 (German scale, 1.0 = best)'
+    - 'Minor: Computer Science. Master thesis: Summarization of Texts using a Pretrained Language Model'
+- when: "2013–2016"
+  degree: "B.Sc. in Economics"
+  where: "University of Mannheim"
+  notes:
+    - 'Grade: 1.9'
+    - 'Major: Economics, Minor: Mathematics. Exchange semester at E.N.S.A.E. ParisTech, Paris (2015–2016)'

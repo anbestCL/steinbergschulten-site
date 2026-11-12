@@ -1,0 +1,16 @@
+baseURL: https://anbestcl.github.io/steinbergschulten-site/
+languageCode: en
+title: Anna Steinberg Schulten
+params:
+  description: PhD candidate in Statistics at LMU Munich. NLP researcher turning long, complex documents into structured, verifiable data.
+  email: anna.steinberg@lmu.de
+  github: https://github.com/anbestCL
+  scholar: https://scholar.google.com/citations?user=NVLgz14AAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/anna-steinberg-schulten-855329172/
+  mysite:
+    credit: false
+    discovery: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

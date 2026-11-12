@@ -1,0 +1,33 @@
+{{ define "main" }}
+<header class="top"><nav>
+<a href="#research">Research</a><a href="#talks">Talks</a><a href="#education">Education</a><a href="#teaching">Teaching</a><a href="#awards">Awards</a><a href="#beyond">Beyond research</a><a href="#contact">Contact</a><a href="{{ "cv.pdf" | relURL }}">CV (PDF)</a>
+</nav></header>
+<main>
+<section class="hero">
+<img class="photo" src="{{ "photo.jpg" | relURL }}" alt="Portrait of Anna Steinberg Schulten" width="160" height="160">
+<div><h1>Anna Steinberg Schulten</h1>
+<p class="tag">NLP researcher turning long, complex documents into structured, verifiable data.</p>
+<p class="aff">Third-year PhD Candidate · <a href="https://www.stat.lmu.de/soda/en/">Social Data Science and AI (SODA) Lab</a>, <a href="https://www.stat.lmu.de/en/">Department of Statistics</a>, LMU Munich<br>Advisors: <a href="https://www.stat.lmu.de/soda/en/about-us/contact-page/frauke-kreuter-825909f7.html">Prof. Frauke Kreuter</a> (LMU Munich), <a href="https://alexfraser.github.io/">Prof. Alexander Fraser</a> (TUM Heilbronn)<br>Affiliations: <a href="https://zuseschoolrelai.de/">relAI</a> (Konrad Zuse School of Excellence in Reliable AI), <a href="https://mcml.ai/">MCML</a> (Munich Center for Machine Learning)</p></div>
+</section>
+<section class="bio">{{ .Content }}</section>
+<section class="interests"><h2>Research interests</h2><p>LLMs · information extraction · multimodal LLMs · uncertainty quantification</p></section>
+<section id="research"><h2>Research</h2>
+<p class="note">Note: A. Steinberg = A. Steinberg Schulten.</p>
+{{ range .Site.Data.papers }}<h3>{{ .group }}</h3>
+<ul class="list">{{ range .items }}<li><span class="when">{{ .year }}</span><div><strong>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</strong><br><em>{{ .venue }}</em><br><span class="sub">{{ .authors }}</span>{{ range .extra }} <a class="tag-link" href="{{ .url }}">[{{ .label }}]</a>{{ end }}</div></li>{{ end }}</ul>
+{{ end }}</section>
+<section id="talks"><h2>Talks &amp; Presentations</h2>
+<ul class="list">{{ range .Site.Data.talks }}<li><span class="when">{{ .year }}</span><div><strong>{{ .title }}</strong><br><em>{{ .venue }}</em></div></li>{{ end }}</ul></section>
+<section id="education"><h2>Education</h2>
+<ul class="list">{{ range .Site.Data.education }}<li><span class="when">{{ .when }}</span><div><strong>{{ .degree }}</strong>, <em>{{ .where }}</em>{{ range .notes }}<br><span class="sub">{{ . | safeHTML }}</span>{{ end }}</div></li>{{ end }}</ul></section>
+<section id="teaching"><h2>Teaching</h2>
+<ul class="list">{{ range .Site.Data.teaching }}<li><span class="when">{{ .when }}</span><div><strong>{{ .role }}</strong>, {{ .what }}{{ with .where }}<br><em>{{ . }}</em>{{ end }}</div></li>{{ end }}</ul></section>
+<section id="awards"><h2>Scholarships &amp; Awards</h2>
+<ul class="list">{{ range .Site.Data.awards }}<li><span class="when">{{ .when }}</span><div>{{ .what }}</div></li>{{ end }}</ul></section>
+<section id="beyond"><h2>Beyond research</h2><div class="beyond"><span class="owl" aria-hidden="true">{{ partial "owl.html" . | safeHTML }}</span><div><p>I love learning languages: I speak five languages at least fluently and am learning Spanish and Turkish. I also love to listen to and play music: I sing in a German-Ukrainian choir and play the horn in a local Symphonic Brass Orchestra in Cologne.</p><p>I also have a soft spot for owls.</p></div></div></section>
+<section id="contact"><h2>Contact</h2>
+<p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> · <a href="{{ .Site.Params.github }}">GitHub</a> · <a href="{{ .Site.Params.scholar }}">Google Scholar</a> · <a href="{{ .Site.Params.linkedin }}">LinkedIn</a> · <a href="{{ "cv.pdf" | relURL }}">CV (PDF)</a></p></section>
+</main>
+<footer><span>© {{ now.Year }} Anna Steinberg Schulten</span>{{ if .Site.Params.mysite.credit }}<span>Created using <a href="https://gking.harvard.edu/mysite">GaryKing.org/mysite</a></span>{{ end }}</footer>
+{{ if .Site.Params.mysite.discovery }}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anna Steinberg Schulten","affiliation":"LMU Munich","email":"mailto:{{ .Site.Params.email }}"}</script>{{ end }}
+{{ end }}

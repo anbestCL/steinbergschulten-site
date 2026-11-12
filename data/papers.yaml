@@ -1,0 +1,15 @@
+- group: Peer-reviewed publications
+  items:
+  - {year: 2026, title: "A Practitioner's Guide to Systematic Prompt Evaluation for Information Extraction", venue: "EMNLP 2026 Industry Track, pp. 975–987", authors: "Steinberg Schulten, A., Schierholz, M., Reichenbach, L., Kreuter, F., Fraser, A.", url: "https://aclanthology.org/2026.emnlp-industry.59/"}
+  - {year: 2026, title: "Climatextract: A Systematic Prompt Evaluation For Climate Information Extraction", venue: "ClimateNLP 2026, pp. 29–40", authors: "Steinberg Schulten, A., Schierholz, M., Reichenbach, L., Kreuter, F., Fraser, A.", url: "https://aclanthology.org/2026.climatenlp-1.3/", extra: [{label: code, url: "https://github.com/gist-sustainability/climatextract"}]}
+  - {year: 2025, title: "Addressing data gaps in sustainability reporting: A benchmark dataset for greenhouse gas emission extraction", venue: "Scientific Data, 12, 1497", authors: "Beck, J.*, Steinberg, A.*, Dimmelmeier, A. et al. (*shared first authorship)", url: "https://doi.org/10.1038/s41597-025-05664-8", extra: [{label: data, url: "https://doi.org/10.5281/zenodo.14035800"}]}
+  - {year: 2026, title: "Beyond Dictionaries: Machine-Learned Normalization of Emission Units in Information Extraction", venue: "ClimateNLP 2026, pp. 132–142", authors: "Reichenbach, L., Oehler, S., Schierholz, M., Steinberg Schulten, A.", url: "https://aclanthology.org/2026.climatenlp-1.10/", extra: [{label: code, url: "https://github.com/gist-sustainability/unit_harmonization"}]}
+  - {year: 2026, title: "NLP for Social Good: A Survey and Outlook of Challenges, Opportunities, and Responsible Deployment", venue: "EACL 2026 (long paper)", authors: "Karamolegkou, A. et al. (incl. Steinberg, A.)", url: "https://aclanthology.org/2026.eacl-long.238/"}
+- group: Working papers
+  items:
+  - {year: 2026, title: "Beyond Aggregate Performance: A Stratified Evaluation of Multimodal LLMs for Legal-Reference Extraction from German Land-Use Plans", venue: "Working paper", authors: "Ewudor, H., Sommer, F., Steinberg Schulten, A."}
+  - {year: 2026, title: "LMU & TUM NLP at the NTCIR-19 SciClaimEval Task: Structured Evidence and Two-Step Operation Reasoning for Cross-modal Scientific Claim Verification", venue: "Working paper (NTCIR-19 SciClaimEval Shared Task)", authors: "Steinberg Schulten, A., Fraser, A."}
+  - {year: 2026, title: "Automated reproducibility assessments in the social and behavioral sciences using large language models", venue: "Preprint, under review at Nature Human Behaviour", authors: "Feuerriegel, S., Holtdirk, T., Marcolongo, P., Steinberg Schulten, A., et al.", url: "https://doi.org/10.21203/rs.3.rs-10313775/v1"}
+- group: Other publications
+  items:
+  - {year: 2026, title: "Addressing Data Gaps in Climate Change and Sustainability Statistics using Generative AI", venue: "13th Biennial IFC Conference, Bank for International Settlements", authors: "Fehr, M., Oehler, S., Reichenbach, L., Riemer, M., Steinberg Schulten, A., Schierholz, M., Dimmelmeier, A., Sommer, F."}
